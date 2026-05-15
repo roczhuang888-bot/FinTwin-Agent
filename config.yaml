@@ -1,0 +1,12 @@
+system_config:
+  max_parallel_agents: 500
+  default_context_window: 200000
+  evolution_steps: 15
+  mcts_simulations: 1000
+
+api_management:
+  organization_id: "your-org-id"
+  # 设为 True 以支持大规模递归调用
+  high_throughput_mode: true
+  token_limit_per_day: 500000000
+  retry_strategy: "exponential_backoff"
